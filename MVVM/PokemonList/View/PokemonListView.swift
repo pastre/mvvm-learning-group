@@ -8,7 +8,7 @@ final class PokemonListView: UIView {
         
         view.translatesAutoresizingMaskIntoConstraints = false
         view.register(PokemonCell.self, forCellReuseIdentifier: "PokemonCell")
-        
+        view.rowHeight = 100
         return view
     }()
     
@@ -45,7 +45,12 @@ final class PokemonListView: UIView {
     
     // MARK: - Internal API
     
-    func bind(dataSource: UITableViewDataSource) {
+    func bind(dataSource: UITableViewDataSource, delegate: UITableViewDelegate) {
         tableView.dataSource = dataSource
+        tableView.delegate = delegate
+    }
+    
+    func reloadData() {
+        tableView.reloadData()
     }
 }

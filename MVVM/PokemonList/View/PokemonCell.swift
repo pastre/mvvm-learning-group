@@ -1,6 +1,10 @@
 import UIKit
 
 final class PokemonCell: UITableViewCell {
+    
+    struct Model {
+        let name: String
+    }
 
     private lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -42,7 +46,7 @@ final class PokemonCell: UITableViewCell {
     }
     
     // MARK: - Internal api
-    func configure(pokemonName: String) {
-        titleLabel.text = pokemonName
+    func configure(pokemonName: Model) {
+        titleLabel.text = pokemonName.name
     }
 }

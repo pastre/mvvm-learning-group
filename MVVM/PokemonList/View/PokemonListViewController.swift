@@ -1,11 +1,5 @@
-//
-//  ViewController.swift
-//  MVVM
-//
-//  Created by Bruno Pastre on 09/11/21.
-//
-
 // Reativo ou nao
+// Bidirecional
 // MVVM model view viewmodel
 // Model -> Modelo de dados
 struct Cat {
@@ -26,7 +20,7 @@ import UIKit
 final class PokemonListViewController: UIViewController {
     // MARK: - Properties
     
-    private let viewModel = PokemonListViewModel()
+    private let viewModel = PokemonListViewModel(service: PokemonListService())
     private lazy var pokemonTableView = PokemonListView()
 
     // MARK: - ViewController lifecycle
@@ -37,11 +31,22 @@ final class PokemonListViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        pokemonTableView.bind(dataSource: self)
+        pokemonTableView.bind(dataSource: self, delegate: self)
+        viewModel.delegate = self
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        viewModel.loadPokemons()
     }
 }
 
-extension PokemonListViewController: UITableViewDataSource {
+extension PokemonListViewController: PokemonListViewModelDelegate {
+    func reloadData() {
+        pokemonTableView.reloadData()
+    }
+}
+
+extension PokemonListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         viewModel.numberOfPokemons
     }
@@ -53,5 +58,13 @@ extension PokemonListViewController: UITableViewDataSource {
         let pokemonName = viewModel.name(forPokemonAt: indexPath.row)
         cell.configure(pokemonName: pokemonName)
         return cell
+    }
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let height = scrollView.frame.size.height
+        let contentYoffset = scrollView.contentOffset.y
+        let distanceFromBottom = scrollView.contentSize.height - contentYoffset
+        guard distanceFromBottom < height else { return }
+        viewModel.loadPokemons()
     }
 }

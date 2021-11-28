@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D7D12FB12743E8CE00C6BEF5 /* ListPokemonService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D12FB02743E8CE00C6BEF5 /* ListPokemonService.swift */; };
+		D7D12FB92743EF6500C6BEF5 /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D12FB82743EF6500C6BEF5 /* MVVMTests.swift */; };
+		D7D12FC02743EF9100C6BEF5 /* PokemonListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D12FBF2743EF9100C6BEF5 /* PokemonListViewModelTests.swift */; };
+		D7D12FC62743F4D600C6BEF5 /* Pokemon.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D12FC52743F4D600C6BEF5 /* Pokemon.swift */; };
+		D7D12FC82743F51000C6BEF5 /* ApiResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D12FC72743F51000C6BEF5 /* ApiResult.swift */; };
+		D7D12FCB2743F53500C6BEF5 /* DTOs.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D12FCA2743F53500C6BEF5 /* DTOs.swift */; };
+		D7D12FCD2743F61B00C6BEF5 /* PokemonMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D12FCC2743F61B00C6BEF5 /* PokemonMapper.swift */; };
 		D7FECF17273AB1D20019AB69 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FECF16273AB1D20019AB69 /* AppDelegate.swift */; };
 		D7FECF19273AB1D20019AB69 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FECF18273AB1D20019AB69 /* SceneDelegate.swift */; };
 		D7FECF1B273AB1D20019AB69 /* PokemonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FECF1A273AB1D20019AB69 /* PokemonListViewController.swift */; };
@@ -18,7 +25,25 @@
 		D7FECF30273AB9970019AB69 /* PokemonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7FECF2F273AB9970019AB69 /* PokemonCell.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D7D12FBA2743EF6500C6BEF5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D7FECF0B273AB1D10019AB69 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D7FECF12273AB1D20019AB69;
+			remoteInfo = MVVM;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D7D12FB02743E8CE00C6BEF5 /* ListPokemonService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListPokemonService.swift; sourceTree = "<group>"; };
+		D7D12FB62743EF6500C6BEF5 /* MVVMTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7D12FB82743EF6500C6BEF5 /* MVVMTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMTests.swift; sourceTree = "<group>"; };
+		D7D12FBF2743EF9100C6BEF5 /* PokemonListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonListViewModelTests.swift; sourceTree = "<group>"; };
+		D7D12FC52743F4D600C6BEF5 /* Pokemon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pokemon.swift; sourceTree = "<group>"; };
+		D7D12FC72743F51000C6BEF5 /* ApiResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiResult.swift; sourceTree = "<group>"; };
+		D7D12FCA2743F53500C6BEF5 /* DTOs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DTOs.swift; sourceTree = "<group>"; };
+		D7D12FCC2743F61B00C6BEF5 /* PokemonMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonMapper.swift; sourceTree = "<group>"; };
 		D7FECF13273AB1D20019AB69 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7FECF16273AB1D20019AB69 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D7FECF18273AB1D20019AB69 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,6 +58,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D7D12FB32743EF6500C6BEF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7FECF10273AB1D20019AB69 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -43,10 +75,66 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D7D12FB72743EF6500C6BEF5 /* MVVMTests */ = {
+			isa = PBXGroup;
+			children = (
+				D7D12FB82743EF6500C6BEF5 /* MVVMTests.swift */,
+				D7D12FBF2743EF9100C6BEF5 /* PokemonListViewModelTests.swift */,
+			);
+			path = MVVMTests;
+			sourceTree = "<group>";
+		};
+		D7D12FC12743F49C00C6BEF5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D7FECF2F273AB9970019AB69 /* PokemonCell.swift */,
+				D7FECF2D273AB8130019AB69 /* PokemonListView.swift */,
+				D7FECF1A273AB1D20019AB69 /* PokemonListViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D7D12FC22743F4A800C6BEF5 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				D7D12FC42743F4CB00C6BEF5 /* Model */,
+				D7FECF2B273AB5290019AB69 /* PokemonListViewModel.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		D7D12FC32743F4AE00C6BEF5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D7D12FC92743F52C00C6BEF5 /* DTO */,
+				D7D12FB02743E8CE00C6BEF5 /* ListPokemonService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		D7D12FC42743F4CB00C6BEF5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D7D12FC52743F4D600C6BEF5 /* Pokemon.swift */,
+				D7D12FC72743F51000C6BEF5 /* ApiResult.swift */,
+				D7D12FCC2743F61B00C6BEF5 /* PokemonMapper.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D7D12FC92743F52C00C6BEF5 /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				D7D12FCA2743F53500C6BEF5 /* DTOs.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 		D7FECF0A273AB1D10019AB69 = {
 			isa = PBXGroup;
 			children = (
 				D7FECF15273AB1D20019AB69 /* MVVM */,
+				D7D12FB72743EF6500C6BEF5 /* MVVMTests */,
 				D7FECF14273AB1D20019AB69 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,6 +143,7 @@
 			isa = PBXGroup;
 			children = (
 				D7FECF13273AB1D20019AB69 /* MVVM.app */,
+				D7D12FB62743EF6500C6BEF5 /* MVVMTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -76,10 +165,9 @@
 		D7FECF2A273AB4EA0019AB69 /* PokemonList */ = {
 			isa = PBXGroup;
 			children = (
-				D7FECF2B273AB5290019AB69 /* PokemonListViewModel.swift */,
-				D7FECF1A273AB1D20019AB69 /* PokemonListViewController.swift */,
-				D7FECF2D273AB8130019AB69 /* PokemonListView.swift */,
-				D7FECF2F273AB9970019AB69 /* PokemonCell.swift */,
+				D7D12FC32743F4AE00C6BEF5 /* Service */,
+				D7D12FC22743F4A800C6BEF5 /* Domain */,
+				D7D12FC12743F49C00C6BEF5 /* View */,
 			);
 			path = PokemonList;
 			sourceTree = "<group>";
@@ -87,6 +175,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		D7D12FB52743EF6500C6BEF5 /* MVVMTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D7D12FBC2743EF6500C6BEF5 /* Build configuration list for PBXNativeTarget "MVVMTests" */;
+			buildPhases = (
+				D7D12FB22743EF6500C6BEF5 /* Sources */,
+				D7D12FB32743EF6500C6BEF5 /* Frameworks */,
+				D7D12FB42743EF6500C6BEF5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D7D12FBB2743EF6500C6BEF5 /* PBXTargetDependency */,
+			);
+			name = MVVMTests;
+			productName = MVVMTests;
+			productReference = D7D12FB62743EF6500C6BEF5 /* MVVMTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D7FECF12273AB1D20019AB69 /* MVVM */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D7FECF27273AB1D50019AB69 /* Build configuration list for PBXNativeTarget "MVVM" */;
@@ -114,6 +220,10 @@
 				LastSwiftUpdateCheck = 1300;
 				LastUpgradeCheck = 1300;
 				TargetAttributes = {
+					D7D12FB52743EF6500C6BEF5 = {
+						CreatedOnToolsVersion = 13.0;
+						TestTargetID = D7FECF12273AB1D20019AB69;
+					};
 					D7FECF12273AB1D20019AB69 = {
 						CreatedOnToolsVersion = 13.0;
 					};
@@ -133,11 +243,19 @@
 			projectRoot = "";
 			targets = (
 				D7FECF12273AB1D20019AB69 /* MVVM */,
+				D7D12FB52743EF6500C6BEF5 /* MVVMTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D7D12FB42743EF6500C6BEF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7FECF11273AB1D20019AB69 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -151,20 +269,42 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D7D12FB22743EF6500C6BEF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7D12FC02743EF9100C6BEF5 /* PokemonListViewModelTests.swift in Sources */,
+				D7D12FB92743EF6500C6BEF5 /* MVVMTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D7FECF0F273AB1D20019AB69 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D7FECF2E273AB8130019AB69 /* PokemonListView.swift in Sources */,
+				D7D12FCB2743F53500C6BEF5 /* DTOs.swift in Sources */,
+				D7D12FCD2743F61B00C6BEF5 /* PokemonMapper.swift in Sources */,
+				D7D12FC62743F4D600C6BEF5 /* Pokemon.swift in Sources */,
 				D7FECF1B273AB1D20019AB69 /* PokemonListViewController.swift in Sources */,
+				D7D12FC82743F51000C6BEF5 /* ApiResult.swift in Sources */,
 				D7FECF30273AB9970019AB69 /* PokemonCell.swift in Sources */,
 				D7FECF17273AB1D20019AB69 /* AppDelegate.swift in Sources */,
+				D7D12FB12743E8CE00C6BEF5 /* ListPokemonService.swift in Sources */,
 				D7FECF2C273AB5290019AB69 /* PokemonListViewModel.swift in Sources */,
 				D7FECF19273AB1D20019AB69 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D7D12FBB2743EF6500C6BEF5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D7FECF12273AB1D20019AB69 /* MVVM */;
+			targetProxy = D7D12FBA2743EF6500C6BEF5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D7FECF1C273AB1D20019AB69 /* Main.storyboard */ = {
@@ -186,6 +326,52 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		D7D12FBD2743EF6500C6BEF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QM43B7QRF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pastre.MVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM.app/MVVM";
+			};
+			name = Debug;
+		};
+		D7D12FBE2743EF6500C6BEF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QM43B7QRF9;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = dev.pastre.MVVMTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM.app/MVVM";
+			};
+			name = Release;
+		};
 		D7FECF25273AB1D50019AB69 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -361,6 +547,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D7D12FBC2743EF6500C6BEF5 /* Build configuration list for PBXNativeTarget "MVVMTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D7D12FBD2743EF6500C6BEF5 /* Debug */,
+				D7D12FBE2743EF6500C6BEF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		D7FECF0E273AB1D10019AB69 /* Build configuration list for PBXProject "MVVM" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
