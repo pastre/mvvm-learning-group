@@ -56,7 +56,7 @@ extension PokemonListViewController: UITableViewDataSource, UITableViewDelegate 
             withIdentifier: "PokemonCell") as? PokemonCell
         else { fatalError("No cell registered!") }
         let pokemonName = viewModel.name(forPokemonAt: indexPath.row)
-        cell.configure(pokemonName: pokemonName)
+//        cell.configure(pokemonName: pokemonName)
         return cell
     }
     

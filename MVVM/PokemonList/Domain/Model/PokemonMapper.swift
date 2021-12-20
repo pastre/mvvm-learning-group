@@ -1,7 +1,7 @@
 final class PokemonMapper {
     func apiResult(from dto: ApiResultDTO) -> ApiResult {
         .init(
-            results: dto.results.map(pokemon),
+            results: [],
             next: dto.next)
     }
     
